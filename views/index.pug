@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  input(type="hidden" id="csrf_input", name="_csrf" value=csrfToken)
+  div(id='map')
+  div(id='menu_wrapper')
+    .md-form.md-outline.input-with-post-icon(id="search-box-div")
+      i.fas.fa-search.input-prefix
+      input#suffixInside2.form-control(type='text')
+      label(for='suffixInside2') Arama yap
+    .btn-group(role='group' aria-label='Basic example')
+      button.btn.btn-primary.actionBtn(type='button', data-toggle="tooltip", data-placement="bottom", title="Ulaşım Analizi")
+        <i class="fa actionFont fa-subway"></i>
+      button.btn.btn-primary.actionBtn(type='button', data-toggle="tooltip", data-placement="bottom", title="Panaroma")
+        <i class="fa actionFont fa-street-view"></i>
+      button.btn.btn-primary.actionBtn(type='button', data-toggle="tooltip", data-placement="bottom", title="Kameralar")
+        <i class="fa actionFont fa-video"></i>
+      button.btn.btn-primary.actionBtn(id="layers_btn", type='button', data-toggle="tooltip", data-placement="bottom" title="Katmanlar")
+        <i class="fa actionFont fa-map-marked-alt"></i>
+      button.btn.btn-primary.actionBtn(type='button', data-toggle="tooltip", data-placement="bottom", title="Menü")
+        <i class="fa actionFont fa-bars"></i>

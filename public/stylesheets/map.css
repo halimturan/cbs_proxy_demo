@@ -1,0 +1,7 @@
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#menu_wrapper {position: absolute; top: 10px; left: 10px; display: flex; height: 65px;}
+.actionFont {font-size: large}
+#search-box-div {margin-top: 0 !important; margin-bottom: 0 !important; height: 38px; background: white}
+.btn-group {margin-left: -6px; height: 48px; margin-top: -5px;}
+.actionBtn {padding: 0 !important; width: 55px;}
